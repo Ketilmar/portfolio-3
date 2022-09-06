@@ -1,6 +1,6 @@
 const TopMenu = () => {
   return (
-    <div className="top-menu">
+    <div className="topmenu-wrapper">
       <div> dette er top menyen</div>
     </div>
   );

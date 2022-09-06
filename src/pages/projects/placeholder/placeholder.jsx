@@ -1,12 +1,14 @@
-import { CollatzContent } from "./collatzContent";
+import { PlaceholderContent } from "./placeholderContent";
 
-const Collatz = () => {
+const Placeholder = () => {
   return (
     <>
       <div className="project">
-        <div className="project-name">{CollatzContent.content.headline}</div>
+        <div className="project-name">
+          {PlaceholderContent.content.headline}
+        </div>
         <div className="project-content">
-          {CollatzContent.content.paragraph}
+          {PlaceholderContent.content.paragraph}
         </div>
         <i class="fa-brands fa-html5 fa-2x"></i>
         <i class="fa-brands fa-square-js fa-2x"></i>
@@ -16,4 +18,4 @@ const Collatz = () => {
   );
 };
 
-export { Collatz };
+export { Placeholder };
