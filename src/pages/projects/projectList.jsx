@@ -9,6 +9,11 @@ const Projectlist = () => {
       <Collatz />
       <NavApp />
       <Placeholder />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
+      <Placeholder />
     </div>
   );
 };

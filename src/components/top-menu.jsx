@@ -1,24 +1,20 @@
+const myId = document.querySelector(".topmenu-wrapper");
+// console.log(myId.className);
+
+// this hides topmenu when scroll down
+let hideMenu = function () {
+  let y = window.scrollY;
+  if (y >= 300) {
+    myId.className = "topmenu-wrapper hide";
+  } else {
+    myId.className = "topmenu-wrapper show";
+  }
+};
+
+window.addEventListener("scroll", hideMenu);
+
 const TopMenu = () => {
-  let myId = document.querySelector(".topmenu-wrapper");
-  // console.log(myId);
-
-  let doSomething = function () {
-    let y = window.scrollY;
-    if (y >= 800) {
-      myId.className = "cta show";
-    } else {
-      myId.className = "cta hide";
-    }
-  };
-
-  window.addEventListener("scroll", doSomething);
-
-  // console.log(myId.className);
-  return (
-    <div className="topmenu-wrapper">
-      <div> dette er top menyen</div>
-    </div>
-  );
+  return <div className="topmenu-wrapper">dette er top menyen</div>;
 };
 
 export { TopMenu };
