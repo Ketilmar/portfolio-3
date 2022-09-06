@@ -8,9 +8,9 @@ const Collatz = () => {
         <div className="project-content">
           {CollatzContent.content.paragraph}
         </div>
-        <i class="fa-brands fa-html5 fa-2x"></i>
-        <i class="fa-brands fa-square-js fa-2x"></i>
-        <i class="fa-brands fa-css3-alt fa-2x"></i>
+        <i className="fa-brands fa-html5 fa-2x"></i>
+        <i className="fa-brands fa-square-js fa-2x"></i>
+        <i className="fa-brands fa-css3-alt fa-2x"></i>
       </div>
     </>
   );
