@@ -23,7 +23,9 @@ code {
   top: 5px;
   /* display: grid; */
   position: sticky;
-  background-color: blanchedalmond;
+  background: hsla(240, 60%, 88%, 1);
+  box-shadow: 1px 15px 11px -9px rgb(0 0 255 / 17%);
+  transition: all 1s;
 }
 
 .mainpage-wrapper {
@@ -39,7 +41,31 @@ code {
   height: 100vh;
 
   position: sticky;
-  background-color: #dce0f57d;
+  /* box-shadow: 9px 29px 7px -5px rgb(0 0 255 / 16%); */
+  box-shadow: 9px 2px 11px -6px rgb(0 0 255 / 33%);
+  /* background-color: #dce0f57d; */
+
+  background: hsla(195, 100%, 89%, 1) 100%;
+
+  background: linear-gradient(
+    90deg,
+    hsla(240, 60%, 88%, 1) 0%,
+    hsla(195, 100%, 89%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(240, 60%, 88%, 1) 0%,
+    hsla(195, 100%, 89%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(240, 60%, 88%, 1) 0%,
+    hsla(195, 100%, 89%, 1) 100%
+  );
+
+  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CFCFF3", endColorstr="#C7F1FF", GradientType=1 ); */
 }
 
 .sidemenu-wrapper > img {
@@ -56,6 +82,19 @@ code {
 
 .sidemenu-links > a {
   margin: 1em 0 1em 0;
+}
+
+.sidemenu-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* position: absolute; */
+  bottom: 30px;
+  margin-top: 5em;
+}
+
+.sidemenu-icons > i {
+  margin: 0 3px 0 3px;
 }
 
 .projectlist-wrapper {
@@ -83,6 +122,14 @@ code {
 
 .project-content {
   margin: 2em;
+}
+
+.project-page {
+  width: 100%;
+}
+
+.project-page > img {
+  width: 50%;
 }
 
 .about-wrapper {

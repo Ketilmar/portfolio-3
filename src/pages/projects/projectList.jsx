@@ -5,7 +5,7 @@ import { Placeholder } from "./placeholder/placeholder";
 const Projectlist = () => {
   return (
     <div className="projectlist-wrapper">
-      projectlist
+      <h3>Prosjekt liste</h3>
       <Collatz />
       <NavApp />
       <Placeholder />
