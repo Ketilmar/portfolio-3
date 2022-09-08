@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+/* remove underscore from all links */
+a {
+  text-decoration: none;
+}
+
 .App {
   display: flex;
   /* width: 100%; */
@@ -89,8 +94,8 @@ code {
   flex-direction: row;
   justify-content: center;
   /* position: absolute; */
-  bottom: 30px;
-  margin-top: 5em;
+  /* bottom: 30px; */
+  margin-top: 100%;
 }
 
 .sidemenu-icons > i {
@@ -117,11 +122,16 @@ code {
 }
 
 .project > i {
-  margin: 0 5px 0 5px;
+  margin: 0 5px 0.5em 5px;
 }
 
 .project-content {
   margin: 2em;
+}
+
+.project-content::after {
+  content: "... Read more ->";
+  color: lightslategray;
 }
 
 .project-page {
@@ -130,6 +140,14 @@ code {
 
 .project-page > img {
   width: 50%;
+}
+
+.project-page-content {
+  margin: 0 0.5em 0 0.5em;
+}
+
+.project-page-content > i {
+  margin-left: 0.5em;
 }
 
 .about-wrapper {

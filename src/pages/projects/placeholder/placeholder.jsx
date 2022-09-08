@@ -8,7 +8,7 @@ const Placeholder = () => {
           {PlaceholderContent.content.headline}
         </div>
         <div className="project-content">
-          {PlaceholderContent.content.paragraph}
+          {PlaceholderContent.content.paragraph.slice(0, 100)}
         </div>
         <i className="fa-brands fa-html5 fa-2x"></i>
         <i className="fa-brands fa-square-js fa-2x"></i>
