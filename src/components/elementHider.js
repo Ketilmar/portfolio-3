@@ -1,14 +1,16 @@
-// med denne metoden er myId=HTMLElement når jeg laster siden (f5). Men her får jeg ikke pushet classname til DOM
 const myId = document.getElementsByClassName("topmenu-wrapper");
-console.log(myId);
+let lastKnown = 0;
 
-// this hides topmenu when scroll down
+/** enables you to hide menu on down scroll and immediately show on scroll up */
 let hideMenu = () => {
   let y = window.scrollY;
-  if (y >= 300) {
+  if (y > lastKnown) {
+    lastKnown = y;
     myId[0].className = "topmenu-wrapper  hide";
   } else {
+    lastKnown = y;
     myId[0].className = "topmenu-wrapper  show";
+    console.log("trigger show");
   }
 };
 

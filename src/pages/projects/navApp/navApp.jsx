@@ -9,8 +9,9 @@ const NavApp = () => {
           <h3>{NavAppContent.content.headline}</h3>
 
           <div className="project-content">
-            {/* need to use 'props.children' because paragraph is a react.element */}
-            {NavAppContent.content.paragraph.props.children.slice(0, 100)}
+            {/* need to use 'props.children' because paragraph is a react.element
+            this use the first 100 'tegn' from the text from projects page */}
+            {NavAppContent.content.paragraph.props.children.slice(0, 200)}
           </div>
         </Link>
         <i className="fa-brands fa-html5 fa-2x"></i>

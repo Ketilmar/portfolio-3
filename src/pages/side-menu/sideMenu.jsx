@@ -12,7 +12,7 @@ function SideMenu() {
       <div className="sidemenu-icons">
         <i className="fa-brands fa-twitter fa-2x"></i>
         <i className="fa-brands fa-discord fa-2x"></i>
-        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        <i className="fa-brands fa-linkedin-in fa-2x"></i>
       </div>
     </div>
   );
