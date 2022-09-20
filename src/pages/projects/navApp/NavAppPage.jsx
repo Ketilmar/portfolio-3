@@ -9,7 +9,7 @@ const NavAppPage = () => {
       />
 
       <div className="project-page-content">
-        <p>{NavAppContent.content.paragraph}</p>
+        <div>{NavAppContent.content.paragraph}</div>
         <i className="fa-brands fa-html5 fa-4x"></i>
         <i className="fa-brands fa-square-js fa-4x"></i>
         <i className="fa-brands fa-css3-alt fa-4x"></i>

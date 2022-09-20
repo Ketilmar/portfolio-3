@@ -141,6 +141,11 @@ a {
   margin: 2em;
 }
 
+.project-content > img {
+  float: left;
+  height: 20vh;
+}
+
 .project-content::after {
   content: "... Read more ->";
   color: lightslategray;
