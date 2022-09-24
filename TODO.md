@@ -15,6 +15,8 @@ Ketilmar's portfolio
 - [x] converting to a React site
 - [*] make header reappear on top when you start to scroll up
   -- [ ] i think it trigger to often and maybe uses too much recourses. Should trigger once per direction
+- [*] styling
+  -- [ ] Using styled components
 
 ### Completed Column ✓
 
