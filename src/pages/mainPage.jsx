@@ -20,7 +20,7 @@ const MainPage = () => {
   );
 };
 
-/** this is part of hiding/showing the top menu when scrolling  */
+/** hiding/showing the top menu when scrolling  */
 window.addEventListener("scroll", hideMenu);
 
 export { MainPage };
