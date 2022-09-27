@@ -20,6 +20,9 @@ a {
 .App {
   display: flex;
   /* width: 100%; */
+  background-image: url("/public/Sketchpad.png");
+  /* background-position: center; */
+  background-attachment: fixed;
 }
 
 .topmenu-wrapper {
@@ -44,15 +47,16 @@ a {
 }
 
 .mainpage-wrapper {
-  width: 100%;
-  background-color: aliceblue;
+  width: 75%;
+  background-color: #f0f8ffe6;
+  margin-left: 2.5em;
 }
 
 .sidemenu-wrapper {
   /* display: flex;
   flex-direction: column; */
   top: 0px;
-  width: 30%;
+  width: 15%;
   height: 94vh;
 
   position: sticky;
@@ -116,7 +120,7 @@ a {
 
 .projectlist-wrapper {
   /* flex-direction: column; */
-  width: 100%;
+  width: 90%;
   height: 100%;
   /* border-left: 2px solid; */
   /* margin-right: -80em; */

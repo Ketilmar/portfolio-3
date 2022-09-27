@@ -4,9 +4,7 @@ const Placeholder = () => {
   return (
     <>
       <div className="project">
-        <div className="project-name">
-          {PlaceholderContent.content.headline}
-        </div>
+        <h3>{PlaceholderContent.content.headline}</h3>
         <div className="project-content">
           <img
             src={process.env.PUBLIC_URL + "/sketchpad.png"}
