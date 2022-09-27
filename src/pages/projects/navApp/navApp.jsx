@@ -10,6 +10,8 @@ const NavApp = () => {
 
           <div className="project-content">
             <img
+              // width={"40%"}
+              // height={"10%"}
               src={process.env.PUBLIC_URL + "/nav-app.PNG"}
               alt="Bilde av NAV-appen"
             />
