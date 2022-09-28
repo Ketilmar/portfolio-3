@@ -6,9 +6,7 @@ Ketilmar's portfolio
 
 - [ ] make seperate pages for each project with links to github
 - [ ] take and put in a real photo
-- [ ] make sidebar stay put when scroll to bottom
 - [ ] make an home page
-- [ ] make an about page
 
 ### In Progress
 
@@ -16,8 +14,12 @@ Ketilmar's portfolio
 - [*] make header reappear on top when you start to scroll up
   -- [ ] i think it trigger to often and maybe uses too much recourses. Should trigger once per direction
 - [*] styling
-  -- [ ] Using styled components
+- - [ ] Using styled components
+- [x] make an about page
+- - [ ] Missing content
 
 ### Completed Column ✓
 
 - [x] something done
+- [x] get project image in xxxcontent.jsx file
+- [x] make sidebar stay put when scroll to bottom

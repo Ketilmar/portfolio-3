@@ -9,7 +9,7 @@ const Collatz = () => {
           <h3>{CollatzContent.content.headline}</h3>
           <div className="project-content">
             <img
-              src={process.env.PUBLIC_URL + "/collatz.PNG"}
+              src={CollatzContent.content.img}
               alt="Bilde av Collatz siden"
             />
             {CollatzContent.content.paragraph.slice(0, 200)}

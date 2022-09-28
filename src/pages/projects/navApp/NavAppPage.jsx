@@ -3,10 +3,7 @@ import { NavAppContent } from "./navAppContent";
 const NavAppPage = () => {
   return (
     <div className="project-page">
-      <img
-        src={process.env.PUBLIC_URL + "/nav-app.PNG"}
-        alt="Bilde av NAV-appen"
-      />
+      <img src={NavAppContent.content.img} alt="Bilde av NAV-appen" />
 
       <div className="project-page-content">
         <div>{NavAppContent.content.paragraph}</div>

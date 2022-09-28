@@ -3,10 +3,7 @@ import { CollatzContent } from "./collatzContent";
 const CollatzPage = () => {
   return (
     <div className="project-page">
-      <img
-        src={process.env.PUBLIC_URL + "/collatz.PNG"}
-        alt="Bilde av Collatz siden"
-      />
+      <img src={CollatzContent.content.img} alt="Bilde av Collatz siden" />
 
       <div className="project-page-content">
         <div>{CollatzContent.content.paragraph}</div>

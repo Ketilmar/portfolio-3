@@ -12,7 +12,7 @@ const NavApp = () => {
             <img
               // width={"40%"}
               // height={"10%"}
-              src={process.env.PUBLIC_URL + "/nav-app.PNG"}
+              src={NavAppContent.content.img}
               alt="Bilde av NAV-appen"
             />
             {/* need to use 'props.children' because paragraph is a react.element

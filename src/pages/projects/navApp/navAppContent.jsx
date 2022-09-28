@@ -1,5 +1,6 @@
 const NavAppContent = {
   content: {
+    img: process.env.PUBLIC_URL + "/nav-app.PNG",
     headline: "Nav App",
     paragraph: (
       <p>

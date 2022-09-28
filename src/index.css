@@ -20,7 +20,7 @@ a {
 .App {
   display: flex;
   /* width: 100%; */
-  background-image: url("/public/Sketchpad.png");
+  background-image: url("https://source.unsplash.com/G66K_ERZRhM");
   /* background-position: center; */
   background-attachment: fixed;
 }
@@ -49,20 +49,16 @@ a {
 .mainpage-wrapper {
   width: 75%;
   background-color: #f0f8ffe6;
-  margin-left: 2.5em;
+  margin-left: 5%;
 }
 
 .sidemenu-wrapper {
-  /* display: flex;
-  flex-direction: column; */
   top: 0px;
   width: 15%;
   height: 94vh;
 
   position: sticky;
-  /* box-shadow: 9px 29px 7px -5px rgb(0 0 255 / 16%); */
   box-shadow: 9px 2px 11px -6px rgb(0 0 255 / 33%);
-  /* background-color: #dce0f57d; */
 
   background: hsla(195, 100%, 89%, 1) 100%;
 
@@ -83,8 +79,6 @@ a {
     hsla(240, 60%, 88%, 1) 0%,
     hsla(195, 100%, 89%, 1) 100%
   );
-
-  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#CFCFF3", endColorstr="#C7F1FF", GradientType=1 ); */
 }
 
 .sidemenu-wrapper > img {
@@ -124,7 +118,7 @@ a {
   height: 100%;
   /* border-left: 2px solid; */
   /* margin-right: -80em; */
-  /* margin-left: 1em; */
+  margin-left: 7%;
 }
 
 .project {
@@ -148,8 +142,8 @@ a {
 .project-content > img {
   float: left;
   /* height: 20vh; */
-  width: 20%;
-  max-height: 12vh;
+  width: 40%;
+  max-height: 10vh;
   object-fit: contain;
 }
 
@@ -177,4 +171,23 @@ a {
 .about-wrapper {
   width: 100%;
   /* margin-left: 4em; */
+}
+
+@media screen and (max-width: 321px) {
+  .topmenu-wrapper {
+    color: blue;
+    height: 8em;
+  }
+  .sidemenu-wrapper {
+    display: none;
+  }
+  .mainpage-wrapper {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .project-content > img {
+    float: none;
+    width: 90%;
+    max-height: 18vh;
+  }
 }
