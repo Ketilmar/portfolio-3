@@ -26,10 +26,12 @@ a {
 }
 
 .topmenu-wrapper {
+  /* display: flex; */
   width: 100%;
   height: 2em;
   top: 5px;
-  /* display: grid; */
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
   position: sticky;
   background: hsla(240, 60%, 88%, 1);
   box-shadow: 1px 15px 11px -9px rgb(0 0 255 / 17%);
@@ -44,6 +46,26 @@ a {
 .show {
   opacity: 1;
   left: 0;
+}
+
+.topmenu-wrapper > img {
+  width: 65%;
+  margin-top: 0em;
+  border-radius: 20px;
+}
+
+.topmenu-links {
+  margin-left: 2em;
+}
+
+.topmenu-links > a {
+  margin-left: 1em;
+}
+
+.topmenu-icons {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  display: grid;
 }
 
 .mainpage-wrapper {
@@ -173,7 +195,7 @@ a {
   /* margin-left: 4em; */
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 840px) {
   .topmenu-wrapper {
     color: blue;
     height: 8em;
