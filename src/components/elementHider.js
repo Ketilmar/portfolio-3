@@ -2,7 +2,7 @@ const myId = document.getElementsByClassName("topmenu-wrapper");
 let lastKnown = 0;
 
 /** enables you to hide menu on down scroll and immediately show on scroll up */
-let hideMenu = () => {
+let elementHider = () => {
   let y = window.scrollY;
   if (y > lastKnown) {
     lastKnown = y;
@@ -14,5 +14,5 @@ let hideMenu = () => {
   }
 };
 
-// har importert i mainPage.js
-export { hideMenu };
+// import in the component to hide
+export { elementHider };
