@@ -17,12 +17,25 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  font-family: "Playfair Display", serif;
+  font-size: larger;
+}
+
 .App {
   display: flex;
   /* width: 100%; */
   background-image: url("https://source.unsplash.com/G66K_ERZRhM");
   /* background-position: center; */
   background-attachment: fixed;
+}
+
+.home-wrapper > p {
+  margin: 0 1em 4em 1em;
+}
+
+.home-wrapper > img {
+  width: 80%;
 }
 
 .topmenu-wrapper {
@@ -49,8 +62,8 @@ a {
 }
 
 .topmenu-wrapper > img {
-  width: 10vh;
-  min-width: 45%;
+  width: 13vh;
+  min-width: 47%;
   margin: 1vh 0 0 20%;
   border-radius: 20px;
 }
@@ -72,7 +85,7 @@ a {
   grid-column-end: 5;
   display: grid;
   justify-content: end;
-  margin-right: 3em;
+  margin: 1vh 3em 0 0;
 }
 
 .mainpage-wrapper {
@@ -104,7 +117,7 @@ a {
   );
 
   background: -webkit-linear-gradient(
-    90deg,
+    360deg,
     hsla(240, 60%, 88%, 1) 0%,
     hsla(195, 100%, 89%, 1) 100%
   );
@@ -213,6 +226,12 @@ a {
   /* margin-left: 4em; */
 }
 
+.about-wrapper > p {
+  margin: 0 1em 0 1em;
+  font-family: "Playfair Display", serif;
+  font-size: large;
+}
+
 @media screen and (max-width: 840px) {
   .App {
     flex-direction: column;
@@ -237,5 +256,18 @@ a {
 @media screen and (min-width: 840px) {
   .topmenu-wrapper {
     display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topmenu-wrapper {
+    /* display: none; */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+  }
+
+  .topmenu-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
   }
 }
