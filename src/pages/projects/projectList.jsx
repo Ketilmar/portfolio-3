@@ -1,6 +1,7 @@
 import { Collatz } from "./collatz/collatz";
 import { NavApp } from "./navApp/navApp";
 import { Placeholder } from "./placeholder/placeholder";
+import { ApiProxy } from "./apiProxy/apiProxy";
 
 const Projectlist = () => {
   return (
@@ -8,7 +9,7 @@ const Projectlist = () => {
       <h3>Prosjekt liste</h3>
       <Collatz />
       <NavApp />
-      <Placeholder />
+      <ApiProxy />
       <Placeholder />
       <Placeholder />
       <Placeholder />
