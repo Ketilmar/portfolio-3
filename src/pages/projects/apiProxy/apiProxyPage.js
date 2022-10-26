@@ -10,8 +10,8 @@ const ApiProxyPage = () => {
           "https://keebit-realm-proxy.herokuapp.com/mongo"
         );
         const json = await response.json();
-        setReview(json.data.listingsAndReview.access);
-        console.log(json);
+        setReview([json]);
+        console.log([json]);
       } catch (error) {
         console.log(error);
       }
@@ -21,12 +21,16 @@ const ApiProxyPage = () => {
 
   return (
     <div className="project-page">
-      {/* <img src={CollatzContent.content.img} alt="Bilde av Collatz siden" /> */}
+      {/* <img src={CollatzContent.content.img} alt="Bilde av API Proxy kode" /> */}
 
       <div className="project-page-content">
         <div>
-          {/* {reviews.map((review) => review.data.listingsAndReview.access)} */}
-          {reviews.map((data, key) => {})}
+          {reviews.map((review, i) => (
+            <ul key={review.data.listingsAndReview._id}>
+              <li>{review.data.listingsAndReview.access}</li>
+              <li>{review.data.listingsAndReview.bed_type}</li>
+            </ul>
+          ))}
         </div>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/api-proxy">
@@ -41,5 +45,20 @@ const ApiProxyPage = () => {
     </div>
   );
 };
+
+// const Card = (props) => {
+//   const { review } = props;
+
+//   return (
+//     <div>
+//       <div>{review.data.listingsAndReview.price}</div>
+//       <div>
+//         {review.data.listingsAndReview.bed_type}{" "}
+//         {review.data.listingsAndReview.property_type}
+//       </div>
+//       <hr />
+//     </div>
+//   );
+// };
 
 export { ApiProxyPage };
