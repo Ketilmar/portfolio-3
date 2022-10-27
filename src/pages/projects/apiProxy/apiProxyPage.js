@@ -19,19 +19,19 @@ const ApiProxyPage = () => {
     fetchData();
   }, []); // end useEffect
 
+  const innhold = reviews.map((review) => (
+    <Card
+      key={review.data.listingsAndReview._id}
+      {...review.data.listingsAndReview}
+    />
+  ));
+
+  console.log(innhold);
+
   return (
     <div className="project-page">
-      {/* <img src={CollatzContent.content.img} alt="Bilde av API Proxy kode" /> */}
-
       <div className="project-page-content">
-        <div>
-          {reviews.map((review, i) => (
-            <ul key={review.data.listingsAndReview._id}>
-              <li>{review.data.listingsAndReview.access}</li>
-              <li>{review.data.listingsAndReview.bed_type}</li>
-            </ul>
-          ))}
-        </div>
+        <div>{innhold}</div>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/api-proxy">
             "Api Proxy" Github page
@@ -46,19 +46,21 @@ const ApiProxyPage = () => {
   );
 };
 
-// const Card = (props) => {
-//   const { review } = props;
+const Card = (props) => {
+  const review = props;
 
-//   return (
-//     <div>
-//       <div>{review.data.listingsAndReview.price}</div>
-//       <div>
-//         {review.data.listingsAndReview.bed_type}{" "}
-//         {review.data.listingsAndReview.property_type}
-//       </div>
-//       <hr />
-//     </div>
-//   );
-// };
+  console.log(review);
+  return (
+    <>
+      <ul>
+        <li>{review.name}</li>
+        <li>{review.price}</li>
+        <li>{review.access}</li>
+        <li>{review.description}</li>
+        <li>{review.room_type}</li>
+      </ul>
+    </>
+  );
+};
 
 export { ApiProxyPage };
