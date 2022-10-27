@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Card, ApiProxyContent } from "./apiProxyContent";
 
 const ApiProxyPage = () => {
   const [reviews, setReview] = useState([]);
@@ -19,19 +20,23 @@ const ApiProxyPage = () => {
     fetchData();
   }, []); // end useEffect
 
-  const innhold = reviews.map((review) => (
+  const dbContent = reviews.map((review) => (
     <Card
       key={review.data.listingsAndReview._id}
       {...review.data.listingsAndReview}
     />
   ));
 
-  console.log(innhold);
+  // console.log(innhold);
 
   return (
     <div className="project-page">
       <div className="project-page-content">
-        <div>{innhold}</div>
+        <div>
+          <h1> {ApiProxyContent.content.headline}</h1>
+          <p>{ApiProxyContent.content.paragraph}</p>
+        </div>
+        <div>{dbContent}</div>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/api-proxy">
             "Api Proxy" Github page
@@ -43,23 +48,6 @@ const ApiProxyPage = () => {
         <i className="fa-brands fa-css3-alt fa-4x"></i>
       </div>
     </div>
-  );
-};
-
-const Card = (props) => {
-  const review = props;
-
-  console.log(review);
-  return (
-    <>
-      <ul>
-        <li>{review.name}</li>
-        <li>{review.price}</li>
-        <li>{review.access}</li>
-        <li>{review.description}</li>
-        <li>{review.room_type}</li>
-      </ul>
-    </>
   );
 };
 
