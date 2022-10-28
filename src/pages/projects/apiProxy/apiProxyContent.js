@@ -4,7 +4,8 @@ const ApiProxyContent = {
   content: {
     img: process.env.PUBLIC_URL + "/collatz.PNG",
     headline: "API Proxy",
-    paragraph: "noe tekst her",
+    paragraph:
+      "API Proxy er en Node/Express server som kjører på en Heroku Dyno. Denne kan benyttes som en proxy for api'er, hvor jeg må beholde kontrollen på nøkkelen.",
   },
 };
 

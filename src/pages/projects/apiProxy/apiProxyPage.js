@@ -32,10 +32,10 @@ const ApiProxyPage = () => {
   return (
     <div className="project-page">
       <div className="project-page-content">
-        <div>
+        <>
           <h1> {ApiProxyContent.content.headline}</h1>
           <p>{ApiProxyContent.content.paragraph}</p>
-        </div>
+        </>
         <div>{dbContent}</div>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/api-proxy">
