@@ -1,34 +1,6 @@
-import { useState, useEffect } from "react";
-import { Card, ApiProxyContent } from "./apiProxyContent";
+import { ApiData, ApiProxyContent } from "./apiProxyContent";
 
 const ApiProxyPage = () => {
-  const [reviews, setReview] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://keebit-realm-proxy.herokuapp.com/mongo"
-        );
-        const json = await response.json();
-        setReview([json]);
-        console.log([json]);
-      } catch (error) {
-        console.log(error);
-      }
-    }; // end FetchData
-    fetchData();
-  }, []); // end useEffect
-
-  const dbContent = reviews.map((review) => (
-    <Card
-      key={review.data.listingsAndReview._id}
-      {...review.data.listingsAndReview}
-    />
-  ));
-
-  // console.log(innhold);
-
   return (
     <div className="project-page">
       <div className="project-page-content">
@@ -36,7 +8,7 @@ const ApiProxyPage = () => {
           <h1> {ApiProxyContent.content.headline}</h1>
           <p>{ApiProxyContent.content.paragraph}</p>
         </>
-        <div>{dbContent}</div>
+        <div>{ApiData()}</div>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/api-proxy">
             "Api Proxy" Github page
