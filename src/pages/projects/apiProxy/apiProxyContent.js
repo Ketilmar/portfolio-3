@@ -39,13 +39,15 @@ const ApiData = () => {
         );
         const json = await response.json();
         setReview([json]);
-        console.log([json]);
+        // console.log([json]);
       } catch (error) {
         console.log(error);
       }
     }; // end FetchData
     fetchData();
   }, []); // end useEffect
+
+  // console.log(reviews);
 
   const dbContent = reviews.map((review) => (
     <Card
