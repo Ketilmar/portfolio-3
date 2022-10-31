@@ -49,42 +49,6 @@ const ApiData = () => {
 
   // console.log(reviews);
 
-  let db;
-  const tmpIndexReq = indexedDB.open("MyTestDatabase", 4);
-
-  tmpIndexReq.onerror = (event) => {
-    console.error("Why didn't you allow my web app to use IndexedDB?!");
-  };
-
-  // tmpIndexReq.onupgradeneeded = function () {
-  //   let db = tmpIndexReq.result;
-  //   if (!db.objectStoreNames.contains("books")) {
-  //     // if there's no "books" store
-  //     db.createObjectStore("books", { keyPath: "id" }); // create it
-  //   }
-  // };
-
-  tmpIndexReq.onsuccess = (event) => {
-    db = event.target.result;
-
-    const objectStore = db.createObjectStore("listingsAndReview", {
-      keyPath: reviews[0].data.listingsAndReview._id,
-      autoIncrement: true,
-    });
-
-    objectStore.createIndex("bedrooms", "bed", { unique: false });
-
-    objectStore.transaction.oncomplete = (event) => {
-      // Store values in the newly created objectStore.
-      const customerObjectStore = db
-        .transaction("listingsAndReview", "readwrite")
-        .objectStore("listingsAndReview");
-      objectStore.forEach((review) => {
-        customerObjectStore.add(review);
-      });
-    };
-  };
-
   const dbContent = reviews.map((review) => (
     <Card
       key={review.data.listingsAndReview._id}
