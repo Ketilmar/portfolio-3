@@ -237,6 +237,10 @@ h3 {
     flex-direction: column;
   }
 
+  .topmenu-wrapper > img {
+    height: 12vh;
+  }
+
   .sidemenu-wrapper {
     display: none;
   }
