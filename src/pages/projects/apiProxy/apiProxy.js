@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
+import { ApiProxyContent } from "./apiProxyContent";
 
 const ApiProxy = () => {
   return (
     <>
       <div className="project">
         <Link to="/apiproxypage">
-          {/* <h3>{CollatzContent.content.headline}</h3> */}
+          <h3>{ApiProxyContent.content.headline}</h3>
           <div className="project-content">
-            {/* <img
-              src={CollatzContent.content.img}
+            <img
+              src={ApiProxyContent.content.img}
               alt="Bilde av Collatz siden"
-            /> */}
-            {/* {CollatzContent.content.paragraph.slice(0, 200)} */}
+            />
+            {ApiProxyContent.content.paragraph.slice(0, 200)}
           </div>
         </Link>
         <i className="fa-brands fa-html5 fa-2x"></i>
