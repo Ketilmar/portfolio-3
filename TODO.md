@@ -7,6 +7,8 @@ Ketilmar's portfolio
 - [ ] make seperate pages for each project with links to github
 - [ ] take and put in a real photo
 - [ ] make an home page
+- [ ] shorten the About page to a few lines. Maybe add a page for more detailed info
+- [ ] Make link "active state" on hover
 
 ### In Progress
 

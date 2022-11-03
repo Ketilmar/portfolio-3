@@ -5,6 +5,7 @@ import { NavAppPage } from "./projects/navApp/NavAppPage";
 import { CollatzPage } from "./projects/collatz/collatzPage";
 import { Home } from "./home/home";
 import { ApiProxyPage } from "./projects/apiProxy/apiProxyPage";
+import { KeystonePage } from "./projects/keystone/keystonePage";
 
 const MainPage = () => {
   return (
@@ -16,6 +17,7 @@ const MainPage = () => {
         <Route path="/navapppage" element={<NavAppPage />} />
         <Route path="/collatzpage" element={<CollatzPage />} />
         <Route path="/apiproxypage" element={<ApiProxyPage />} />
+        <Route path="/keystonepage" element={<KeystonePage />} />
       </Routes>
     </div>
   );
