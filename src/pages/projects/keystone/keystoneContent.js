@@ -12,8 +12,9 @@ const KeystoneQuery = () => {
   const [posts, setPosts] = useState([]);
 
   const myHeader = new Headers();
-  myHeader.append("Content-Type", "application/json");
+  myHeader.set("Content-Type", "application/json");
 
+  console.log(myHeader.get("content-type"));
   const fetchParams = {
     method: "POST",
     headers: myHeader,
@@ -41,6 +42,7 @@ const KeystoneQuery = () => {
           "http://localhost:3000/api/graphql",
           fetchParams
         );
+        console.log(fetchParams);
         console.log(response);
         const json = await response.json();
         setPosts([json]);
