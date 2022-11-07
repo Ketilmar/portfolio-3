@@ -52,7 +52,7 @@ const KeystoneQuery = () => {
   console.log(dbContent);
 
   const users = dbContent.map((users) => (
-    <Users key={users.data.users.id} {...users.data.users} />
+    <Users key={users.data.users[0].id} {...users.data.users[0]} />
   ));
   const posts = dbContent.map((posts) => (
     <Posts key={posts.data.posts.title} {...posts.data.posts} />
