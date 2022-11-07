@@ -67,7 +67,7 @@ const ApiData = () => {
     fetchData();
   }, []); // end useEffect
 
-  // console.log(reviews);
+  console.log(reviews);
 
   const dbContent = reviews.map((review) => (
     <Card

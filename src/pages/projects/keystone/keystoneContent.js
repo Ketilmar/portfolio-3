@@ -9,37 +9,33 @@ const KeystoneContent = {
 };
 
 const KeystoneQuery = () => {
-  const [posts, setPosts] = useState([]);
+  const [dbContent, setPosts] = useState([]);
 
-  const myHeader = new Headers();
-  myHeader.set("Content-Type", "application/json");
-
-  console.log(myHeader.get("content-type"));
   const fetchParams = {
     method: "POST",
-    headers: myHeader,
-    mode: "no-cors",
-    body: {
+    headers: { "Content-Type": "application/json" }, // myHeader,
+    mode: "cors",
+    body: JSON.stringify({
       query: `{
-          posts {
-            author {
-              name
-              postsCount
-              id
-              email
-              createdAt
-            }
-            content {document}
-          }
-        }`,
-    },
+        users {
+          id
+          name
+          email
+        }
+        posts {
+          title
+          content {document}
+          
+        }
+      }`,
+    }),
   };
 
   useEffect(() => {
-    const fetchPosts = async () => {
+    const fetchContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/graphql",
+          "http://localhost:8000/api/graphql",
           fetchParams
         );
         console.log(fetchParams);
@@ -50,16 +46,51 @@ const KeystoneQuery = () => {
         console.log(err);
       }
     };
-    fetchPosts();
+    fetchContent();
   }, []);
 
+  console.log(dbContent);
+
+  const users = dbContent.map((users) => (
+    <Users key={users.data.users.id} {...users.data.users} />
+  ));
+  const posts = dbContent.map((posts) => (
+    <Posts key={posts.data.posts.title} {...posts.data.posts} />
+  ));
+
+  console.log(users);
   console.log(posts);
 
   return (
     <>
-      <p>Keystone DATA</p>
+      <p>Keystone Users</p>
+      <div>{users}</div>
+      <div>{posts}</div>
     </>
   );
 };
 
+const Users = (props) => {
+  console.log(props);
+  return (
+    <>
+      <ul>
+        <li>{props.name}</li>
+        <li>{props.email}</li>
+      </ul>
+    </>
+  );
+};
+
+const Posts = (props) => {
+  console.log(props);
+  return (
+    <>
+      <ul>
+        <li>{props.title}</li>
+        <li>{props.content}</li>
+      </ul>
+    </>
+  );
+};
 export { KeystoneContent, KeystoneQuery };
