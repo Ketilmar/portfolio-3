@@ -38,7 +38,7 @@ const KeystoneQuery = () => {
           "http://localhost:8000/api/graphql",
           fetchParams
         );
-        console.log(fetchParams);
+        // console.log(fetchParams);
         console.log(response);
         const json = await response.json();
         setPosts([json]);
@@ -51,11 +51,19 @@ const KeystoneQuery = () => {
 
   console.log(dbContent);
 
-  const users = dbContent.map((users) => (
-    <Users key={users.data.users[0].id} {...users.data.users[0]} />
+  const users = dbContent.map((users, index) => (
+    <Users key={index} {...users.data.users} />
   ));
-  const posts = dbContent.map((posts) => (
-    <Posts key={posts.data.posts.title} {...posts.data.posts} />
+
+  // const posts = dbContent[0].data.posts.map((posts) => (
+  //   <Posts key={posts.title} {...posts} />
+  // ));
+
+  const posts = dbContent.map((poster, index) => (
+    <Posts
+      key={index}
+      {...poster.data.posts[0].content.document[0].children[0]}
+    />
   ));
 
   console.log(users);
@@ -71,7 +79,7 @@ const KeystoneQuery = () => {
 };
 
 const Users = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <ul>
@@ -83,12 +91,12 @@ const Users = (props) => {
 };
 
 const Posts = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <>
       <ul>
         <li>{props.title}</li>
-        <li>{props.content}</li>
+        <li>{props.text}</li>
       </ul>
     </>
   );
