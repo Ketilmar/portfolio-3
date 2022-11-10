@@ -62,7 +62,8 @@ const KeystoneQuery = () => {
   const posts = dbContent.map((poster, index) => (
     <Posts
       key={index}
-      {...poster.data.posts[0].content.document[0].children[0]}
+      // {...poster.data.posts[0].content.document[0].children[0]}
+      {...poster.data.posts}
     />
   ));
 
@@ -95,8 +96,9 @@ const Posts = (props) => {
   return (
     <>
       <ul>
-        <li>{props.title}</li>
-        <li>{props.text}</li>
+        <li>{props[0].title}</li>
+        <li>{props[0].content.document[0].children[0].text}</li>
+        <li>{props[0].content.document[1].children[0].text}</li>
       </ul>
     </>
   );
