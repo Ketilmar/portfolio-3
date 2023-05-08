@@ -7,7 +7,7 @@ import { Keystone } from "./keystone/keystone";
 const Projectlist = () => {
   return (
     <div className="projectlist-wrapper">
-      <h3>Prosjekt liste</h3>
+      {/* <h1>Project list</h1> */}
       <Collatz />
       <NavApp />
       <ApiProxy />

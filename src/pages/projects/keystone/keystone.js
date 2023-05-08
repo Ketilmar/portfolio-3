@@ -8,10 +8,10 @@ const Keystone = () => {
         <Link to="/keystonepage">
           <h3>{KeystoneContent.content.headline}</h3>
           <div className="project-content">
-            <img
+            {/* <img
               src={KeystoneContent.content.img}
               alt="Bilde av Collatz siden"
-            />
+            /> */}
             {KeystoneContent.content.paragraph.slice(0, 200)}
           </div>
         </Link>

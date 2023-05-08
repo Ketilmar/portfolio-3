@@ -9,12 +9,12 @@ const NavApp = () => {
           <h3>{NavAppContent.content.headline}</h3>
 
           <div className="project-content">
-            <img
+            {/* <img
               // width={"40%"}
               // height={"10%"}
               src={NavAppContent.content.img}
               alt="Bilde av NAV-appen"
-            />
+            /> */}
             {/* need to use 'props.children' because paragraph is a react.element
             this use the first 100 'tegn' from the text from projects page */}
             {NavAppContent.content.paragraph.props.children.slice(0, 200)}

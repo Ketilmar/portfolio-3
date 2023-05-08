@@ -13,7 +13,7 @@ function SideMenu() {
         <Link to="/about">About</Link>
       </div>
       <div className="sidemenu-icons">
-        <i className="fa-brands fa-twitter fa-2x"></i>
+      <a className="fa-solid fa-envelope fa-2x"></a>
         <a
           href="https://discordapp.com/users/965890616502390784"
           className="fa-brands fa-discord fa-2x"

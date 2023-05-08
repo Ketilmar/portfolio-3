@@ -6,7 +6,7 @@ const CollatzPage = () => {
       <img src={CollatzContent.content.img} alt="Bilde av Collatz siden" />
 
       <div className="project-page-content">
-        <div>{CollatzContent.content.paragraph}</div>
+        <p>{CollatzContent.content.paragraph}</p>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/collatz-1">
             Collatz Github page

@@ -6,7 +6,7 @@ const Placeholder = () => {
       <div className="project">
         <h3>{PlaceholderContent.content.headline}</h3>
         <div className="project-content">
-          <img src={PlaceholderContent.content.img} alt="placeholder" />
+          {/* <img src={PlaceholderContent.content.img} alt="placeholder" /> */}
           {PlaceholderContent.content.paragraph.slice(0, 100)}
         </div>
         <i className="fa-brands fa-html5 fa-2x"></i>

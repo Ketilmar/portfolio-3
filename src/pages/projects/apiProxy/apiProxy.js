@@ -8,10 +8,10 @@ const ApiProxy = () => {
         <Link to="/apiproxypage">
           <h3>{ApiProxyContent.content.headline}</h3>
           <div className="project-content">
-            <img
+            {/* <img
               src={ApiProxyContent.content.img}
               alt="Bilde av Collatz siden"
-            />
+            /> */}
             {ApiProxyContent.content.paragraph.slice(0, 200)}
           </div>
         </Link>
