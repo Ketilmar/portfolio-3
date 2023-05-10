@@ -10,7 +10,7 @@ const ApiProxyPage = () => {
         </>
         <div>{ApiData()}</div>
         <div className="project-page-urls">
-          <a href="https://github.com/Ketilmar/api-proxy">
+          <a href="https://github.com/Ketilmar/api-proxy" rel="noopener noreferrer" target="_blank">
             "Api Proxy" Github page
           </a>
           <a href="legg inn url">api Proxy App</a>
