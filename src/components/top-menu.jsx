@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { elementHider } from "./elementHider";
 
 const TopMenu = () => {
 
@@ -29,6 +30,6 @@ const TopMenu = () => {
 };
 
 /** hiding/showing the top menu when scrolling  */
-// window.addEventListener("scroll", elementHider);
+window.addEventListener("scroll", elementHider);
 
 export { TopMenu };

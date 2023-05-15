@@ -51,11 +51,12 @@ h3 {
 }
 
 .home-wrapper > p {
+  font-family: 'Merienda';
   margin: 0 1em 4em 1em;
 }
 
 .home-wrapper > h3 {
-  text-decoration: underline;
+  font-size: 4svmax;
 }
 
 .home-wrapper > img {

@@ -7,17 +7,8 @@ import { Home } from "./home/home";
 import { ApiProxyPage } from "./projects/apiProxy/apiProxyPage";
 import { KeystonePage } from "./projects/keystone/keystonePage";
 import { TheCosmosPage } from "./projects/theCosmos/theCosmosPage";
-import {elementHider} from "../components/elementHider"
-
-import React from "react";
 
 const MainPage = () => {
-
-  React.useEffect(() => {
-    const element1 = document.getElementsByClassName("mainpage-wrapper");
-    console.log(element1);
-    element1[0].addEventListener("scroll", elementHider);
-  }, []);
 
   return (
     <div className="mainpage-wrapper">
