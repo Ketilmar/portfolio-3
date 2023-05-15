@@ -6,7 +6,9 @@ import { CollatzPage } from "./projects/collatz/collatzPage";
 import { Home } from "./home/home";
 import { ApiProxyPage } from "./projects/apiProxy/apiProxyPage";
 import { KeystonePage } from "./projects/keystone/keystonePage";
+import { TheCosmosPage } from "./projects/theCosmos/theCosmosPage";
 import {elementHider} from "../components/elementHider"
+
 import React from "react";
 
 const MainPage = () => {
@@ -27,6 +29,7 @@ const MainPage = () => {
         <Route path="/collatzpage" element={<CollatzPage />} />
         <Route path="/apiproxypage" element={<ApiProxyPage />} />
         <Route path="/keystonepage" element={<KeystonePage />} />
+        <Route path="/thecosmospage" element={<TheCosmosPage />} />
       </Routes>
     </div>
   );

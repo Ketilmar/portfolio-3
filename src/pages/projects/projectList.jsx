@@ -3,6 +3,7 @@ import { NavApp } from "./navApp/navApp";
 import { Placeholder } from "./placeholder/placeholder";
 import { ApiProxy } from "./apiProxy/apiProxy";
 import { Keystone } from "./keystone/keystone";
+import { TheCosmos } from "./theCosmos/theCosmos";
 
 const Projectlist = () => {
   return (
@@ -12,6 +13,7 @@ const Projectlist = () => {
       <NavApp />
       <ApiProxy />
       <Keystone />
+      <TheCosmos />
       <Placeholder />
       <Placeholder />
       <Placeholder />
