@@ -3,7 +3,7 @@ const trafficDataContent = {
       // img: process.env.PUBLIC_URL + "/theCosmosFrontpage.png",
       headline: "TrafficData",
       paragraph:
-        "This is a group project made for the AMO course Kodehode organized by Jobloop. Its aim is to provide a modern and responsive interface for viewing statistics about celestial bodies in our solar system.",
+        "This is an node.js module that queries Statens Vegvesen sin GraphQL API for selected data, based on user input (process.argv). This gets parsed and converted to csv for further use. Added dockerfile for easy implementation in external systems. Unit testing is done with Jest in a separate git branch",
     },
   };
   
