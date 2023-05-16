@@ -3,7 +3,7 @@ const HomeContent = {
     image: "https://source.unsplash.com/mS2QlkTEirI",
     headline: "Ketil Markhus - Portfolio",
     paragraph:
-      "Jeg er en full stack utvikler fra Bergen, som for det meste benytter teknologier som javascript, node.js, HTML og React",
+      "Hi. My name is Ketil and i'm a full stack web developer born and raised in Bergen. I work with technoligies like javascript, node.js, Jest, html and React.",
   },
 };
 

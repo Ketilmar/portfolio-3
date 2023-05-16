@@ -25,6 +25,11 @@ code {
 
 a {
   color: #a1acb5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8dbce5;
 }
 
 a[target='_blank']:after {
@@ -196,7 +201,7 @@ h3 {
   position: absolute;
   /* bottom: 40vh; */
   bottom: 0;
-  margin-left: 1em;
+  margin-left: 1.5em;
   margin-bottom: 4em;
   width: initial;
   color: aliceblue;
@@ -326,6 +331,7 @@ h3 {
 }
 
 .project-page-urls {
+  font-weight: bold;
   display: grid;
   justify-content: center;
   margin: 1em 1em;

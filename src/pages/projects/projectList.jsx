@@ -13,14 +13,8 @@ const Projectlist = () => {
       <TheCosmos />
       <TrafficData />
       <Collatz />
-      <NavApp />
       <ApiProxy />
       <Keystone />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
     </div>
   );
 };
