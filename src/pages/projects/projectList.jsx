@@ -1,6 +1,4 @@
 import { Collatz } from "./collatz/collatz";
-import { NavApp } from "./navApp/navApp";
-import { Placeholder } from "./placeholder/placeholder";
 import { ApiProxy } from "./apiProxy/apiProxy";
 import { Keystone } from "./keystone/keystone";
 import { TheCosmos } from "./theCosmos/theCosmos";
@@ -13,14 +11,8 @@ const Projectlist = () => {
       <TheCosmos />
       <TrafficData />
       <Collatz />
-      <NavApp />
       <ApiProxy />
       <Keystone />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
-      <Placeholder />
     </div>
   );
 };

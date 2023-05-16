@@ -1,7 +1,7 @@
 const AboutText = {
   content: {
     headline: "About Me",
-    paragraph: `Hei. Mitt navn er Ketil og jeg er en Full Stack Web utvikler fra Bergen. Jeg jobber med teknologier som blant annet javascript, node.js, HTML og React. Mitt fokus er hovedsakelig på backend, men implementerer også design etter ønske. Med bakgrunn innen it drift, har jeg god erfaring med implementering, automatisering og samhandling mellom systemer.`,
+    paragraph: `Hi. My name is Ketil and i'm a full stack web developer born and raised in Bergen. I work with technoligies like javascript, node.js, Jest, html and React. My main focus is on backend and with my background in network and system administration, i have a good understandig of system implementation, security, automation and interaction.`,
     education1: 'Fagskole IT drift',
     education2: 'Kodehode',
     experience: 'bla bla'
