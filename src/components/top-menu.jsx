@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { elementHider } from "./elementHider";
 
 const TopMenu = () => {
+
   return (
     <div className="topmenu-wrapper">
       <img
@@ -14,7 +15,7 @@ const TopMenu = () => {
         <Link to="/about">About</Link>
       </div>
       <div className="topmenu-icons">
-        <i className="fa-brands fa-twitter fa-2x"></i>
+        <a className="fa-solid fa-envelope fa-2x"></a>
         <a
           href="https://discordapp.com/users/965890616502390784"
           className="fa-brands fa-discord fa-2x"

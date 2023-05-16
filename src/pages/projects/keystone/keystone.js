@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
-import { ApiProxyContent } from "./apiProxyContent";
+import { KeystoneContent } from "./keystoneContent";
 
-const ApiProxy = () => {
+const Keystone = () => {
   return (
     <>
       <div className="project">
-        <Link to="/apiproxypage">
-          <h3>{ApiProxyContent.content.headline}</h3>
+        <Link to="/keystonepage">
+          <h3>{KeystoneContent.content.headline}</h3>
           <div className="project-content">
             {/* <img
-              src={ApiProxyContent.content.img}
+              src={KeystoneContent.content.img}
               alt="Bilde av Collatz siden"
             /> */}
-            {ApiProxyContent.content.paragraph.slice(0, 200)}
+            {KeystoneContent.content.paragraph.slice(0, 200)}
           </div>
         </Link>
         <i className="fa-brands fa-html5 fa-2x"></i>
@@ -23,4 +23,4 @@ const ApiProxy = () => {
   );
 };
 
-export { ApiProxy };
+export { Keystone };

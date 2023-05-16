@@ -8,10 +8,10 @@ const Collatz = () => {
         <Link to="/collatzpage">
           <h3>{CollatzContent.content.headline}</h3>
           <div className="project-content">
-            <img
+            {/* <img
               src={CollatzContent.content.img}
               alt="Bilde av Collatz siden"
-            />
+            /> */}
             {CollatzContent.content.paragraph.slice(0, 200)}
           </div>
         </Link>
