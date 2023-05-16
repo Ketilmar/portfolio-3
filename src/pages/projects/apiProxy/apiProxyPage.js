@@ -6,6 +6,7 @@ const ApiProxyPage = () => {
       <div className="project-page-content">
         <>
           <h1> {ApiProxyContent.content.headline}</h1>
+          <p>{ApiProxyContent.content.note}</p>
           <p>{ApiProxyContent.content.paragraph}</p>
         </>
         <div>{ApiData()}</div>
@@ -15,9 +16,9 @@ const ApiProxyPage = () => {
           </a>
           <a href="legg inn url">api Proxy App</a>
         </div>
-        <i className="fa-brands fa-html5 fa-4x"></i>
-        <i className="fa-brands fa-square-js fa-4x"></i>
-        <i className="fa-brands fa-css3-alt fa-4x"></i>
+        <i className="fa-brands fa-html5 fa-3x"></i>
+        <i className="fa-brands fa-square-js fa-3x"></i>
+        <i className="fa-brands fa-css3-alt fa-3x"></i>
       </div>
     </div>
   );

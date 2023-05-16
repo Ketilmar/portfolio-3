@@ -6,15 +6,13 @@ let lastKnown = 0;
 let elementHider = () => {
 
   let y = window.scrollY;
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
   if (y > lastKnown) {
     lastKnown = y;
     myId[0].className = "topmenu-wrapper  hide";
-    console.log("trigger hide");
   } else {
     lastKnown = y;
     myId[0].className = "topmenu-wrapper  show";
-    console.log("trigger show");
   }
 };
 

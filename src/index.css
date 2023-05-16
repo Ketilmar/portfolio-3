@@ -317,11 +317,12 @@ h3 {
 }
 
 .project-page-content {
-  margin: 0 0.5em 0 0.5em;
+  margin: 0 0.5em 0 2em;
 }
 
 .project-page-content > i {
   margin-left: 0.5em;
+  color: aliceblue;
 }
 
 .project-page-urls {
@@ -360,6 +361,11 @@ h3 {
   }
 }
 
+@media screen and (max-width: 840px) {
+  .project-page-content {
+    margin: 0 0.5em 0 1em;
+  }
+}
 @media screen and (max-width: 480px) {
   .topmenu-wrapper {
     /* display: none; */
@@ -370,5 +376,9 @@ h3 {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
+  }
+
+  .project-page-content {
+    margin: 0 0.5em 0 1em;
   }
 }

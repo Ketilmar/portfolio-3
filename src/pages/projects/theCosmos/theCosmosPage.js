@@ -13,10 +13,10 @@ const TheCosmosPage = () => {
           </a>
           <a href="https://ketilmar.github.io/TheCosmos/">TheCosmos webpage</a>
         </div>
-        <i className="fa-brands fa-html5 fa-4x"></i>
-        <i className="fa-brands fa-square-js fa-4x"></i>
-        <i className="fa-brands fa-css3-alt fa-4x"></i>
-        <i className="fa-brands fa-react fa-4x"></i>
+        <i className="fa-brands fa-html5 fa-3x"></i>
+        <i className="fa-brands fa-square-js fa-3x"></i>
+        <i className="fa-brands fa-css3-alt fa-3x"></i>
+        <i className="fa-brands fa-react fa-3x"></i>
       </div>
     </div>
   );

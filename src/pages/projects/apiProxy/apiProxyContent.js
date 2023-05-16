@@ -7,6 +7,7 @@ const ApiProxyContent = {
     headline: "API Proxy",
     paragraph:
       "API Proxy er en Node/Express server som kjører på en Heroku Dyno. Denne kan benyttes som en proxy for API spørringer mot andre tjenester, hvor jeg må beholde kontrollen på nøkkelen. Fordi Heroku Dyno'en går i dvale etter en tid, kan første spørring ta noen sekunder ",
+    note: 'PS: The free service i used to showcase this is retired',
   },
 };
 
