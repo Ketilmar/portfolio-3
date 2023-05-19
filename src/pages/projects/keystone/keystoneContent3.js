@@ -17,7 +17,7 @@ const KeystoneQuery = async () => {
     // method: method,
     // url: `https://westeurope.azure.data.mongodb-api.com/app/data-wrcpi/endpoint/data/v1/action/findOne`,
     // url: "https://westeurope.azure.realm.mongodb.com/api/client/v2.0/app/data-wrcpi/graphql",
-    url: "http://localhost:3000/api/graphql", // for å teste min lokale Keystone api
+    url: "http://localhost:8000/api/graphql", // for å teste min lokale Keystone api
     // attempt to request data from Mongo HTTPS endpoints
     // url: "https://westeurope.azure.data.mongodb-api.com/app/data-wrcpi/endpoint/testroute",
     headers: {
