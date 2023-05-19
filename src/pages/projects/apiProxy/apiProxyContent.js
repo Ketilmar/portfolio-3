@@ -55,8 +55,9 @@ const ApiData = () => {
       try {
         const response = await fetch(
           // NB: the response from server must align with the setup here.
-          // Check API Proxy server at Heroku
-          "https://keebit-realm-proxy.herokuapp.com/mongo"
+          // Check API Proxy server at Azure Web App (former set up at Heroku)
+          // "https://keebit-realm-proxy.herokuapp.com/mongo"
+          'https://a-proxy.azurewebsites.net/mongo'
         );
         const json = await response.json();
         setReview([json]);

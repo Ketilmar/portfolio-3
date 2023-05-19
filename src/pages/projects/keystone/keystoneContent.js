@@ -38,7 +38,7 @@ const KeystoneQuery = () => {
           "http://localhost:8000/api/graphql",
           fetchParams
         );
-        // console.log(fetchParams);
+        console.log(fetchParams);
         console.log(response);
         const json = await response.json();
         setPosts([json]);
