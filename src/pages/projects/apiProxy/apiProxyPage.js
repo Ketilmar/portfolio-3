@@ -6,8 +6,8 @@ const ApiProxyPage = () => {
       <div className="project-page-content">
         <>
           <h1> {ApiProxyContent.content.headline}</h1>
-          <p>{ApiProxyContent.content.note}</p>
           <p>{ApiProxyContent.content.paragraph}</p>
+          <p>{ApiProxyContent.content.note}</p>
         </>
         <div>{ApiData()}</div>
         <div className="project-page-urls">

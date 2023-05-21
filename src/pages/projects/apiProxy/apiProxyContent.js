@@ -6,8 +6,8 @@ const ApiProxyContent = {
     img: process.env.PUBLIC_URL + "/collatz.PNG",
     headline: "API Proxy",
     paragraph:
-      "API Proxy er en Node/Express server som kjører på en Heroku Dyno. Denne kan benyttes som en proxy for API spørringer mot andre tjenester, hvor jeg må beholde kontrollen på nøkkelen. Fordi Heroku Dyno'en går i dvale etter en tid, kan første spørring ta noen sekunder ",
-    note: 'PS: The free service i used to showcase this is retired',
+      "API Proxy er en Node/Express server som kan benyttes som en proxy for API spørringer mot eksterne tjenester, hvor man må sikre tilgang til API nøkkelen. Nøkkelen lagres som en miljø variabel og er kun tilgjengelig for API Proxy. API Proxy kan benyttes av flere ulike klient og eksterne tjenester samtidig, med hver sin API nøkkel. Man kan velge å returnere eksterne data uendret til klienten, eller å returnere spesifikke data.",
+    note: 'Her benyttes Azure Web App til å kjøre API Proxy, for å hente data fra MongoDB sin GraphQL tjeneste som er sikret med en API nøkkel.',
   },
 };
 
