@@ -11,10 +11,12 @@ const KeystoneContent = {
 const KeystoneQuery = () => {
   const [dbContent, setPosts] = useState([]);
 
-  const fetchParams = {
+  const httpOptions = {
     method: "POST",
-    headers: { "Content-Type": "application/json" }, // myHeader,
+    headers: { "Content-Type": "application/json",'Access-Control-Allow-Origin':'*',
+    'Access-Control-Allow-Methods':'POST,PATCH,OPTIONS','Access-Control-Allow-Credentials': 'true'}, // myHeader,
     mode: "cors",
+    credentials: "same-origin",
     body: JSON.stringify({
       query: `{
         users {
@@ -24,7 +26,6 @@ const KeystoneQuery = () => {
         }
         posts {
           title
-          content {document}
           
         }
       }`,
@@ -35,10 +36,10 @@ const KeystoneQuery = () => {
     const fetchContent = async () => {
       try {
         const response = await fetch(
-          "http://localhost:8000/api/graphql",
-          fetchParams
+          "https://a-content.azurewebsites.net/api/graphql",
+          httpOptions
         );
-        console.log(fetchParams);
+        console.log(httpOptions);
         console.log(response);
         const json = await response.json();
         setPosts([json]);
@@ -51,30 +52,29 @@ const KeystoneQuery = () => {
 
   console.log(dbContent);
 
-  const users = dbContent.map((users, index) => (
-    <Users key={index} {...users.data.users} />
+  const users = dbContent.map((users, id) => (
+    <Users key={id} {...users.data.users} />
   ));
+
+  console.log({users});
 
   // const posts = dbContent[0].data.posts.map((posts) => (
   //   <Posts key={posts.title} {...posts} />
   // ));
 
-  const posts = dbContent.map((poster, index) => (
-    <Posts
-      key={index}
-      // {...poster.data.posts[0].content.document[0].children[0]}
-      {...poster.data.posts}
-    />
-  ));
-
-  console.log(users);
-  console.log(posts);
+  // const posts = dbContent.map((poster, index) => (
+  //   <Posts
+  //     key={index}
+  //     // {...poster.data.posts[0].content.document[0].children[0]}
+  //     {...poster.data.posts}
+  //   />
+  // ));
 
   return (
     <>
       <p>Keystone Users</p>
       <div>{users}</div>
-      <div>{posts}</div>
+      {/* <div>{posts}</div> */}
     </>
   );
 };
@@ -84,8 +84,8 @@ const Users = (props) => {
   return (
     <>
       <ul>
-        <li>{props.name}</li>
-        <li>{props.email}</li>
+        <li>{props[0].name}</li>
+        <li>{props[0].email}</li>
       </ul>
     </>
   );
@@ -103,4 +103,5 @@ const Posts = (props) => {
     </>
   );
 };
+
 export { KeystoneContent, KeystoneQuery };
