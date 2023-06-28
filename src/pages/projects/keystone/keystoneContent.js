@@ -36,7 +36,8 @@ const KeystoneQuery = () => {
     const fetchContent = async () => {
       try {
         const response = await fetch(
-          "https://a-content.azurewebsites.net/api/graphql",
+          // "https://a-content.azurewebsites.net/api/graphql",
+          "http://10.10.224.77:3000/api/graphql",
           httpOptions
         );
         console.log(httpOptions);

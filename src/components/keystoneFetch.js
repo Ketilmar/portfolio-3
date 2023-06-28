@@ -24,6 +24,7 @@ const KeystoneFetch = () =>{
         }),
       };
 
+      useEffect(() => {
       const fetchContent = async () => {
         try {
           const res= await fetch("http://10.10.224.77:3000/api/graphql", httpOptions)
@@ -37,7 +38,7 @@ const KeystoneFetch = () =>{
         };
     };
 
-    useEffect(() => {
+    
       fetchContent();
    },[] );
 

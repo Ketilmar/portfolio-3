@@ -1,13 +1,14 @@
-import { KeystoneContent, KeystoneQuery } from "./keystoneContent";
+import { KeystoneContent6 } from "./KeystoneContent6";
 
 const KeystonePage = () => {
   return (
     <div className="project-page">
-      <img src={KeystoneContent.content.img} alt="Bilde av Collatz siden" />
+      {/* <img src={KeystoneContent.content.img} alt="Bilde av Collatz siden" /> */}
 
       <div className="project-page-content">
-        <div>{KeystoneContent.content.paragraph}</div>
-        <div>{KeystoneQuery()}</div>
+        {/* <div>{KeystoneContent.content.paragraph}</div> */}
+        {/* <div>{keystoneQuery()}</div> */}
+        <KeystoneContent6/>
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/collatz-1">
             Collatz Github page
