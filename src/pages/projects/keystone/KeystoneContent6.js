@@ -1,15 +1,17 @@
 import { fetch1 } from "./fetch1";
 import { useState, useEffect } from "react";
 import { queryUsersAndPosts, queryPost } from "./queries";
-import Select from 'react-select'
+import { DocumentRenderer } from "@keystone-6/document-renderer";
+// import  {renderers}  from "./DocumentRenderProps.tsx";
+import { renderers } from "./DocumentRenderProps.tsx";
 
+  
 // This element gives me an dropdown list of posts. 
 // The plan is to display the content of selected post.
-
 const KeystoneContent6 = () => {
 
     const [state, setState] = useState([]);
-    const [selectedItem, setSelectedItem] = useState("Counter")
+    const [selectedItem, setSelectedItem] = useState([])
 
     let url = "http://10.10.224.77:3000/api/graphql"
     let query = queryUsersAndPosts
@@ -51,13 +53,16 @@ const KeystoneContent6 = () => {
 
             
             {state.length !== 0 && (
-
                 <div>
                     {/* <select id="posts-list" >{state.data.posts.map((post) => (<option onClick={fetchData(document.getElementById("posts-list"))} key={post.id} id={post.id} value={post.title}>{post.title}</option>))}</select> */}
                     <select id="posts-list" onChange={handleChange} >{state.data.posts.map((post) => (<option key={post.id} id={post.id} value={post.title}>{post.title}</option>))}</select>
                     
                 </div>
-            )};
+            )}
+
+            {selectedItem.length !== 0 && (
+                <DocumentRenderer document={selectedItem.data.post.content.document} renderers={renderers} />
+            )}
 
         </div>
     )
