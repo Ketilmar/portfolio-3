@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { queryUsersAndPosts, queryPost } from "./queries";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
 // import  {renderers}  from "./DocumentRenderProps.tsx";
-import { renderers } from "./DocumentRenderProps.tsx";
+import { renderers } from "../../../components/DocumentRenderProps.tsx";
 
   
 // This element gives me an dropdown list of posts. 

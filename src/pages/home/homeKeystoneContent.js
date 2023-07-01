@@ -2,7 +2,7 @@ import { queryPost } from "../projects/keystone/queries";
 import {useState, useEffect} from "react"
 import { fetch1 } from "../projects/keystone/fetch1";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
-import { renderers } from "../projects/keystone/DocumentRenderProps.tsx";
+import { renderers } from "../../components/DocumentRenderProps.tsx";
 
 
 const HomeKeystoneContent = () => {
