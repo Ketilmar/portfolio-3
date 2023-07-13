@@ -6,7 +6,7 @@ import { fetch1 } from "../data/fetch1";
 
 
 
-const KeystoneContent = (itemId) => {
+const KeystoneContent = (query) => {
 
     const [selectedItem, setSelectedItem] = useState([])
 
@@ -14,14 +14,14 @@ const KeystoneContent = (itemId) => {
 
     const fetchData = async (e) => {
         console.log({e});
-            const queriedData = await fetch1(url, queryPost(e));
+            const queriedData = await fetch1(url, e);
             setSelectedItem(queriedData);
     };
 
     console.log({selectedItem});
 
     useEffect(() => {
-        fetchData(itemId);
+        fetchData(query);
     },[]);
 
     return (

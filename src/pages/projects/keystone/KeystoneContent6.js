@@ -2,7 +2,6 @@ import { fetch1 } from "../../../data/fetch1";
 import { useState, useEffect } from "react";
 import { queryUsersAndPosts, queryPost } from "./queries";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
-// import  {renderers}  from "./DocumentRenderProps.tsx";
 import { renderers } from "../../../components/DocumentRenderProps.tsx";
 
   
@@ -13,7 +12,7 @@ const KeystoneContent6 = () => {
     const [state, setState] = useState([]);
     const [selectedItem, setSelectedItem] = useState([])
 
-    let url = "http://10.10.224.77:3000/api/graphql"
+    let url = "http://10.10.224.77:3100/api/graphql"
     let query = queryUsersAndPosts
 
     const fetchData = async (e) => {
@@ -25,7 +24,8 @@ const KeystoneContent6 = () => {
             // const selectedOption = await fetch1(url, queryPost(e.selectedOptions[0].id));
             const selectedOption = await fetch1(url, queryPost(e));
             console.log({selectedOption});
-            setSelectedItem(selectedOption);        }
+            setSelectedItem(selectedOption);       
+        }
 
         else {
             const queriedData = await fetch1(url, query);

@@ -1,5 +1,6 @@
 import './about.css'
 import { KeystoneContent } from "../../components/KeystoneContent";
+import { queryPost } from '../projects/keystone/queries';
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
 
       {/* <div className="about-me"> */}
       {/* <p>{AboutText.content.paragraph} </p> */}
-      {KeystoneContent('clk119ax50002qn0vsntl4526')}
+      {KeystoneContent(queryPost('clk119ax50002qn0vsntl4526'))}
       {/* <h4>Utdanning</h4>
       <li>{AboutText.content.education1}</li>
       <li>{AboutText.content.education2}</li>
