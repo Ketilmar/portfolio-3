@@ -1,6 +1,6 @@
 
 
-
+/** Fetch data with provided props */
 const fetch1 = async (url, query) => {
 
     const httpOptions = {

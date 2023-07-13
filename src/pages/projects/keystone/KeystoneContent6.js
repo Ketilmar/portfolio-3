@@ -1,4 +1,4 @@
-import { fetch1 } from "./fetch1";
+import { fetch1 } from "../../../data/fetch1";
 import { useState, useEffect } from "react";
 import { queryUsersAndPosts, queryPost } from "./queries";
 import { DocumentRenderer } from "@keystone-6/document-renderer";

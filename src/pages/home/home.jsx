@@ -1,13 +1,10 @@
 import { HomeContent } from "./homeContent";
-import { HomeKeystoneContent } from "./homeKeystoneContent";
+import { KeystoneContent } from "../../components/KeystoneContent";
 
 const Home = () => {
   return (
     <div className="home-wrapper">
-      <h3>{HomeContent.content.headline}</h3>
-      <p> {HomeContent.content.paragraph} </p>
-      {/* <div>{KeystoneFetch()} </div> */}
-      <HomeKeystoneContent/>
+      {KeystoneContent('cljy78sx80004mib2odhore68')}
       <img
         src={HomeContent.content.image}
         alt="Bergen Norway"

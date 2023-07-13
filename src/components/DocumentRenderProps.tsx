@@ -7,17 +7,17 @@ import React from "react";
     // use your editor's autocomplete to see what other renderers you can override
     inline: {
       bold: ({ children }) => {
-        return <strong>{children}</strong>;
+        return <strong>{children}</strong>
       },
     },
     block: {
       paragraph: ({ children, textAlign }) => {
-        return <p style={{ textAlign: 'left' }}>{children}</p>;
+        return <p style={{ textAlign: textAlign }}>{children}</p>
       },
 
       heading({ level, children, textAlign }) {
         const Comp = `h${level}` as const;
-        return <Comp style={{ textAlign, color: 'white' }}>{children}</Comp>;
+        return <Comp style={{ textAlign, color: 'white' }}>{children}</Comp>
       },
       // blockquote: ({ children }) => {
       //   return <div style={{ textAlign: 'right' }}>{children}</div>;
@@ -30,7 +30,7 @@ import React from "react";
           background: 'gray',
           // wordWrap: 'break-word',
           overflow: 'auto',
-         }}>{children}</pre>;
+         }}>{children}</pre>
       }
     },
     

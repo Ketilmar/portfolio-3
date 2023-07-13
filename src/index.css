@@ -61,7 +61,7 @@ li {
 
 .home-wrapper > p {
   font-family: 'Merienda';
-  margin: 0 1em 4em 1em;
+  /* margin: 0 1em 4em 1em; */
 }
 
 .home-wrapper > h3 {
@@ -353,7 +353,7 @@ li {
   .mainpage-wrapper {
     width: 90%;
     margin-left: 5%;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
   .project-content > img {
