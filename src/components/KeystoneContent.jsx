@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
 import { renderers } from "./DocumentRenderProps.tsx";
-import { queryPost } from "../pages/projects/keystone/queries";
 import { fetch1 } from "../data/fetch1";
 
 

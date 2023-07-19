@@ -25,9 +25,9 @@ import React from "react";
       code({ children }) {
         return <pre style={{ 
           textTransform: 'none', 
-          color: 'white',
+          color: 'darkgrey',
           textAlign: 'left',
-          background: 'gray',
+          background: 'darkblue',
           // wordWrap: 'break-word',
           overflow: 'auto',
          }}>{children}</pre>

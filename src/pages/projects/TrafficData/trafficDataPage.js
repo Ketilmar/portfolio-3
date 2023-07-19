@@ -1,4 +1,6 @@
-import { trafficDataContent } from "./trafficDataContent";
+// import { trafficDataContent } from "./trafficDataContent";
+import { KeystoneContent } from "../../../components/KeystoneContent";
+import { queryPost } from "../keystone/queries";
 
 const TrafficDataPage = () => {
   return (
@@ -6,7 +8,8 @@ const TrafficDataPage = () => {
       {/* <img src={trafficDataContent.content.img} alt="Description" /> */}
 
       <div className="project-page-content">
-        <p>{trafficDataContent.content.paragraph}</p>
+        {/* <p>{trafficDataContent.content.paragraph}</p> */}
+        {KeystoneContent(queryPost('clkact41g0000mp0uoj46zgr8'))}
         <div className="project-page-urls">
           <a href="https://github.com/Ketilmar/asistobe-vegvesen">
             TrafficData Github page

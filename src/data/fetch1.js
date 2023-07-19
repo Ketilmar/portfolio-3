@@ -17,12 +17,10 @@ const fetch1 = async (url, query) => {
       try {
         const res = await fetch(
           // "https://a-content.azurewebsites.net/api/graphql",
-          // "http://10.10.224.77:3000/api/graphql",
           url,
           httpOptions
         );
-        // console.log(httpOptions);
-        // console.log(response);
+
         let resData = await res.json();
 
         console.log({resData});
@@ -35,8 +33,6 @@ const fetch1 = async (url, query) => {
       catch (err) {
         console.log({err});
       }
-
-    //   return resData
     
 };
 

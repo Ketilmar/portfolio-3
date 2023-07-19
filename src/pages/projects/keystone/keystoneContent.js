@@ -105,4 +105,4 @@ const Posts = (props) => {
   );
 };
 
-export { KeystoneContent, KeystoneQuery };
+// export { KeystoneContent, KeystoneQuery };
