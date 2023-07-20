@@ -1,6 +1,6 @@
 import './about.css'
 import { KeystoneContent } from "../../components/KeystoneContent";
-import { queryPost } from '../../components/queries';
+import { queryPost } from '../../data/queries';
 
 const About = () => {
 

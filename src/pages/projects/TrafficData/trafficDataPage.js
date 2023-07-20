@@ -1,6 +1,6 @@
 // import { trafficDataContent } from "./trafficDataContent";
 import { KeystoneContent } from "../../../components/KeystoneContent";
-import { queryPost } from "../../../components/queries";
+import { queryPost } from "../../../data/queries";
 
 const TrafficDataPage = () => {
   return (

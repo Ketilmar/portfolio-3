@@ -1,6 +1,6 @@
 import { HomeContent } from "./homeContent";
 import { KeystoneContent } from "../../components/KeystoneContent";
-import { queryPost } from "../../components/queries";
+import { queryPost } from "../../data/queries";
 
 const Home = () => {
   return (

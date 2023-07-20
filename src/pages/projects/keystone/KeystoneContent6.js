@@ -1,6 +1,6 @@
 import { fetch1 } from "../../../data/fetch1";
 import { useState, useEffect } from "react";
-import { queryUsersAndPosts, queryPost } from "../../../components/queries";
+import { queryUsersAndPosts, queryPost } from "../../../data/queries";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
 import { renderers } from "../../../components/DocumentRenderProps.tsx";
 
