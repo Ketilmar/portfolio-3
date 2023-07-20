@@ -1,12 +1,12 @@
 import { fetch1 } from "../../../data/fetch1";
 import { useState, useEffect } from "react";
-import { queryUsersAndPosts, queryPost } from "./queries";
+import { queryUsersAndPosts, queryPost } from "../../../components/queries";
 import { DocumentRenderer } from "@keystone-6/document-renderer";
 import { renderers } from "../../../components/DocumentRenderProps.tsx";
 
   
-// This element gives me an dropdown list of posts. 
-// The plan is to display the content of selected post.
+/** This element first returns a dropdown list of posts. 
+    Then listens for 'select' and then returns selected post as a React element. */
 const KeystoneContent6 = () => {
 
     const [state, setState] = useState([]);
@@ -49,7 +49,7 @@ const KeystoneContent6 = () => {
 
     return (
 
-        <div id='LISTEFORSØK'>
+        <div id='posts-list'>
 
             
             {state.length !== 0 && (

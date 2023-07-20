@@ -4,7 +4,7 @@ import { renderers } from "./DocumentRenderProps.tsx";
 import { fetch1 } from "../data/fetch1";
 
 
-
+/** Returns a React element with queried data */
 const KeystoneContent = (query) => {
 
     const [selectedItem, setSelectedItem] = useState([])

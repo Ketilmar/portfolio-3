@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { KeystoneContent } from "./keystoneContent";
 
 const Keystone = () => {
   return (
